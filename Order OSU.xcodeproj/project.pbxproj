@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75B5CC2DB9A34B80AC9DCD98 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E84244EF3A917BF0590B1 /* Pods.framework */; };
 		940B955C1C652F990032DF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B955B1C652F990032DF03 /* AppDelegate.swift */; };
-		940B955E1C652F990032DF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B955D1C652F990032DF03 /* ViewController.swift */; };
+		940B955E1C652F990032DF03 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B955D1C652F990032DF03 /* OperationViewController.swift */; };
 		940B95611C652F990032DF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B955F1C652F990032DF03 /* Main.storyboard */; };
 		940B95631C652F990032DF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B95621C652F990032DF03 /* Assets.xcassets */; };
 		940B95661C652F990032DF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B95641C652F990032DF03 /* LaunchScreen.storyboard */; };
 		940B95711C652F990032DF03 /* Order_OSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95701C652F990032DF03 /* Order_OSUTests.swift */; };
+		940B957C1C6533B80032DF03 /* OperationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B957B1C6533B80032DF03 /* OperationTableViewCell.swift */; };
+		940B958B1C653D470032DF03 /* OperationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B958A1C653D470032DF03 /* OperationTableViewController.swift */; };
+		940B958D1C653F030032DF03 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B958C1C653F030032DF03 /* Operation.swift */; };
+		940B958F1C6560090032DF03 /* OperationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B958E1C6560090032DF03 /* OperationDetailsViewController.swift */; };
+		940B95911C65601C0032DF03 /* OperstionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95901C65601C0032DF03 /* OperstionDetails.swift */; };
+		940B95931C6578BD0032DF03 /* WebOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95921C6578BD0032DF03 /* WebOrderViewController.swift */; };
+		940B95951C65AB690032DF03 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95941C65AB690032DF03 /* SettingsViewController.swift */; };
+		940B95971C6634EE0032DF03 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95961C6634EE0032DF03 /* CatTableViewCell.swift */; };
+		940B95991C6635880032DF03 /* CatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95981C6635880032DF03 /* CatTableViewController.swift */; };
+		940B959B1C6637000032DF03 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B959A1C6637000032DF03 /* FoodCategory.swift */; };
+		940B95A11C6BD4F40032DF03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 940B95A01C6BD4F40032DF03 /* Default-568h@2x.png */; };
+		940B95A71C6C1FB30032DF03 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F881BF604093048CFB7D409 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5337129FEF16275BA354C82C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		866E84244EF3A917BF0590B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B95581C652F990032DF03 /* Order OSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Order OSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B955B1C652F990032DF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		940B955D1C652F990032DF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		940B955D1C652F990032DF03 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		940B95601C652F990032DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940B95621C652F990032DF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B95651C652F990032DF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +52,18 @@
 		940B956C1C652F990032DF03 /* Order OSUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Order OSUTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B95701C652F990032DF03 /* Order_OSUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_OSUTests.swift; sourceTree = "<group>"; };
 		940B95721C652F990032DF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940B957B1C6533B80032DF03 /* OperationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationTableViewCell.swift; sourceTree = "<group>"; };
+		940B958A1C653D470032DF03 /* OperationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationTableViewController.swift; sourceTree = "<group>"; };
+		940B958C1C653F030032DF03 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		940B958E1C6560090032DF03 /* OperationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationDetailsViewController.swift; sourceTree = "<group>"; };
+		940B95901C65601C0032DF03 /* OperstionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperstionDetails.swift; sourceTree = "<group>"; };
+		940B95921C6578BD0032DF03 /* WebOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOrderViewController.swift; sourceTree = "<group>"; };
+		940B95941C65AB690032DF03 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		940B95961C6634EE0032DF03 /* CatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		940B95981C6635880032DF03 /* CatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTableViewController.swift; sourceTree = "<group>"; };
+		940B959A1C6637000032DF03 /* FoodCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		940B95A01C6BD4F40032DF03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = "Pods/../build/Release-iphoneos/SwiftHTTP.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B95A71C6C1FB30032DF03 /* SwiftHTTP.framework in Frameworks */,
+				75B5CC2DB9A34B80AC9DCD98 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +89,12 @@
 		940B954F1C652F990032DF03 = {
 			isa = PBXGroup;
 			children = (
+				940B95A01C6BD4F40032DF03 /* Default-568h@2x.png */,
 				940B955A1C652F990032DF03 /* Order OSU */,
 				940B956F1C652F990032DF03 /* Order OSUTests */,
 				940B95591C652F990032DF03 /* Products */,
+				DB40D4D6CF554CE34A6A300B /* Pods */,
+				A51CD46A22E260CD534EBBB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +111,21 @@
 			isa = PBXGroup;
 			children = (
 				940B955B1C652F990032DF03 /* AppDelegate.swift */,
-				940B955D1C652F990032DF03 /* ViewController.swift */,
-				940B955F1C652F990032DF03 /* Main.storyboard */,
 				940B95621C652F990032DF03 /* Assets.xcassets */,
-				940B95641C652F990032DF03 /* LaunchScreen.storyboard */,
+				940B95961C6634EE0032DF03 /* CatTableViewCell.swift */,
+				940B95981C6635880032DF03 /* CatTableViewController.swift */,
+				940B959A1C6637000032DF03 /* FoodCategory.swift */,
 				940B95671C652F990032DF03 /* Info.plist */,
+				940B95641C652F990032DF03 /* LaunchScreen.storyboard */,
+				940B955F1C652F990032DF03 /* Main.storyboard */,
+				940B958C1C653F030032DF03 /* Operation.swift */,
+				940B958E1C6560090032DF03 /* OperationDetailsViewController.swift */,
+				940B957B1C6533B80032DF03 /* OperationTableViewCell.swift */,
+				940B958A1C653D470032DF03 /* OperationTableViewController.swift */,
+				940B955D1C652F990032DF03 /* OperationViewController.swift */,
+				940B95901C65601C0032DF03 /* OperstionDetails.swift */,
+				940B95941C65AB690032DF03 /* SettingsViewController.swift */,
+				940B95921C6578BD0032DF03 /* WebOrderViewController.swift */,
 			);
 			path = "Order OSU";
 			sourceTree = "<group>";
@@ -96,6 +139,24 @@
 			path = "Order OSUTests";
 			sourceTree = "<group>";
 		};
+		A51CD46A22E260CD534EBBB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */,
+				866E84244EF3A917BF0590B1 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB40D4D6CF554CE34A6A300B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5337129FEF16275BA354C82C /* Pods.debug.xcconfig */,
+				3F881BF604093048CFB7D409 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940B95751C652F990032DF03 /* Build configuration list for PBXNativeTarget "Order OSU" */;
 			buildPhases = (
+				D2E0A75931E50F1FEC1BF2F9 /* Check Pods Manifest.lock */,
 				940B95541C652F990032DF03 /* Sources */,
 				940B95551C652F990032DF03 /* Frameworks */,
 				940B95561C652F990032DF03 /* Resources */,
+				3D009C0D2804ADD348E0AE87 /* Embed Pods Frameworks */,
+				9A3BC42A672E8F715EB72AB0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940B95661C652F990032DF03 /* LaunchScreen.storyboard in Resources */,
+				940B95A11C6BD4F40032DF03 /* Default-568h@2x.png in Resources */,
 				940B95631C652F990032DF03 /* Assets.xcassets in Resources */,
 				940B95611C652F990032DF03 /* Main.storyboard in Resources */,
 			);
@@ -194,13 +259,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D009C0D2804ADD348E0AE87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3BC42A672E8F715EB72AB0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E0A75931E50F1FEC1BF2F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		940B95541C652F990032DF03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940B955E1C652F990032DF03 /* ViewController.swift in Sources */,
+				940B95931C6578BD0032DF03 /* WebOrderViewController.swift in Sources */,
+				940B955E1C652F990032DF03 /* OperationViewController.swift in Sources */,
+				940B95971C6634EE0032DF03 /* CatTableViewCell.swift in Sources */,
+				940B95911C65601C0032DF03 /* OperstionDetails.swift in Sources */,
+				940B95991C6635880032DF03 /* CatTableViewController.swift in Sources */,
+				940B958B1C653D470032DF03 /* OperationTableViewController.swift in Sources */,
+				940B958F1C6560090032DF03 /* OperationDetailsViewController.swift in Sources */,
+				940B957C1C6533B80032DF03 /* OperationTableViewCell.swift in Sources */,
+				940B958D1C653F030032DF03 /* Operation.swift in Sources */,
 				940B955C1C652F990032DF03 /* AppDelegate.swift in Sources */,
+				940B95951C65AB690032DF03 /* SettingsViewController.swift in Sources */,
+				940B959B1C6637000032DF03 /* FoodCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +367,7 @@
 /* Begin XCBuildConfiguration section */
 		940B95731C652F990032DF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5337129FEF16275BA354C82C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -288,6 +412,7 @@
 		};
 		940B95741C652F990032DF03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F881BF604093048CFB7D409 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -325,6 +450,7 @@
 		};
 		940B95761C652F990032DF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5337129FEF16275BA354C82C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Order OSU/Info.plist";
@@ -336,6 +462,7 @@
 		};
 		940B95771C652F990032DF03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F881BF604093048CFB7D409 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Order OSU/Info.plist";
@@ -347,6 +474,7 @@
 		};
 		940B95791C652F990032DF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5337129FEF16275BA354C82C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Order OSUTests/Info.plist";
@@ -359,6 +487,7 @@
 		};
 		940B957A1C652F990032DF03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F881BF604093048CFB7D409 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Order OSUTests/Info.plist";
@@ -388,6 +517,7 @@
 				940B95771C652F990032DF03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940B95781C652F990032DF03 /* Build configuration list for PBXNativeTarget "Order OSUTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +526,7 @@
 				940B957A1C652F990032DF03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

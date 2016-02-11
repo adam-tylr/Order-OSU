@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OperationViewController.swift
 //  Order OSU
 //
 //  Created by Adam Tyler on 2/5/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OperationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
