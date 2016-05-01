@@ -3,7 +3,9 @@
 
 *.jpg
 
-GoogleAnalyticsServices/GoogleAnalytics/Changelog.txt
+Assets/*
+
+GoogleAnalyticsServices/*
 
 GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/AppDelegate.h
 
@@ -14,3 +16,31 @@ GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CategoryViewControl
 *.jpg
 
 *.jpg
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CategoryViewController_iPhone.xib
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CategoryViewController.h
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CategoryViewController.m
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CuteAnimals-Info.plist
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CuteAnimals-Prefix.pch
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/CuteAnimals.xcodeproj/project.pbxproj
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/ImageViewController.h
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/ImageViewController.m
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/main.m
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/NavController.h
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/NavController.m
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/Readme.txt
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/RootViewController.h
+
+GoogleAnalyticsServices/GoogleAnalytics/Examples/CuteAnimals/RootViewController.m
