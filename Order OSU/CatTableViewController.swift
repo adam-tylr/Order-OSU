@@ -33,7 +33,7 @@ class CatTableViewController: UITableViewController {
         categories = []
         
         // Placeholder image
-        let photo0 = UIImage(named: "blankCat")!
+        //let photo0 = UIImage(named: "blankCat")!
         
         // Courtside
         let photo1 = UIImage(named: "courtCat1")!
@@ -52,15 +52,20 @@ class CatTableViewController: UITableViewController {
         categories.append([cat1, cat2, cat3, cat4])
         
         // PAD
-        let cat5 = FoodCategory(name: "Pizza Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT616&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo5 = UIImage(named: "padCat1")!
+        let cat5 = FoodCategory(name: "Pizza Meals", photo: photo5, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT616&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
         
-        let cat6 = FoodCategory(name: "Boneless Wing Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT617&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo6 = UIImage(named: "padCat2")!
+        let cat6 = FoodCategory(name: "Boneless Wing Meals", photo: photo6, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT617&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
-        let cat7 = FoodCategory(name: "Sub Sandwich Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT618&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo7 = UIImage(named: "padCat3")!
+        let cat7 = FoodCategory(name: "Sub Sandwich Meals", photo: photo7, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT618&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
-        let cat8 = FoodCategory(name: "Appetizer Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT620&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo8 = UIImage(named: "padCat4")!
+        let cat8 = FoodCategory(name: "Appetizer Meals", photo: photo8, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT620&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
-        let cat9 = FoodCategory(name: "Salad Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT619&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo9 = UIImage(named: "padCat5")!
+        let cat9 = FoodCategory(name: "Salad Meals", photo: photo9, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT4_SUBCAT619&store=828&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
         
         categories.append([cat5, cat6, cat7, cat8, cat9])
         
@@ -71,14 +76,17 @@ class CatTableViewController: UITableViewController {
         let photo11 = UIImage(named: "woodyCat2")!
         let cat11 = FoodCategory(name: "Half Sheet Pizza", photo: photo11, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT605&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
-        let photo12 = UIImage(named: "woodyCat6")!
+        let photo12 = UIImage(named: "woodyCat3")!
         let cat12 = FoodCategory(name: "Pizza Without Gluten Ingredients", photo: photo12, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT609&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
-        let cat13 = FoodCategory(name: "Sliced Pizza, Sub, and Calzone Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT615&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo13 = UIImage(named: "woodyCat4")!
+        let cat13 = FoodCategory(name: "Sliced Pizza, Sub, and Calzone Meals", photo: photo13, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT615&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
         
-        let cat14 = FoodCategory(name: "Bone-In Wing Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT607&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo14 = UIImage(named: "woodyCat5")!
+        let cat14 = FoodCategory(name: "Bone-In Wing Meals", photo: photo14, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT607&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
         
-        let cat15 = FoodCategory(name: "Boneless Wing Meals", photo: photo0, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT608&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
+        let photo15 = UIImage(named: "woodyCat6")!
+        let cat15 = FoodCategory(name: "Boneless Wing Meals", photo: photo15, link: "http://epos10-phx.sequoiars.com/ePOS?this_category=ROOT97_SUBCAT608&store=846&form=shared3%2fgm%2fmain%2ehtml&design=mobile&set_count_cookie=YES&listtype=begin&item_qty=10")!
 
         
         categories.append([cat10, cat11, cat12, cat13, cat14, cat15])

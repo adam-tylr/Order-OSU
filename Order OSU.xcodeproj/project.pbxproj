@@ -26,6 +26,16 @@
 		940B959B1C6637000032DF03 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B959A1C6637000032DF03 /* FoodCategory.swift */; };
 		940B95A11C6BD4F40032DF03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 940B95A01C6BD4F40032DF03 /* Default-568h@2x.png */; };
 		940B95A71C6C1FB30032DF03 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */; };
+		940B95A91C6C27980032DF03 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95A81C6C27980032DF03 /* SWXMLHash.framework */; };
+		940B95AB1C6D558A0032DF03 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95AA1C6D558A0032DF03 /* Network.swift */; };
+		940B95AD1C6E64700032DF03 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B95AC1C6E64700032DF03 /* OrderDetailViewController.swift */; };
+		940B95AF1C6E8ECE0032DF03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940B95AE1C6E8ECE0032DF03 /* GoogleService-Info.plist */; };
+		940B95B41C6E93900032DF03 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 940B95B31C6E93900032DF03 /* Library */; };
+		940B95B61C6E97650032DF03 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95B51C6E97650032DF03 /* libGoogleAnalyticsServices.a */; };
+		940B95B81C6E97C60032DF03 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95B71C6E97C60032DF03 /* CoreData.framework */; };
+		940B95BA1C6E97DD0032DF03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95B91C6E97DD0032DF03 /* SystemConfiguration.framework */; };
+		940B95BC1C6E981C0032DF03 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95BB1C6E981C0032DF03 /* libsqlite3.0.tbd */; };
+		940B95BE1C6E982F0032DF03 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 940B95BD1C6E982F0032DF03 /* libz.1.1.3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +74,17 @@
 		940B959A1C6637000032DF03 /* FoodCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		940B95A01C6BD4F40032DF03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = "Pods/../build/Release-iphoneos/SwiftHTTP.framework"; sourceTree = "<group>"; };
+		940B95A81C6C27980032DF03 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = "Pods/../build/Debug-iphoneos/SWXMLHash.framework"; sourceTree = "<group>"; };
+		940B95AA1C6D558A0032DF03 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		940B95AC1C6E64700032DF03 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		940B95AE1C6E8ECE0032DF03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		940B95B01C6E8F370032DF03 /* -Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "-Bridging-Header.h"; sourceTree = "<group>"; };
+		940B95B31C6E93900032DF03 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../GoogleAnalyticsServices/GoogleAnalytics/Library; sourceTree = "<group>"; };
+		940B95B51C6E97650032DF03 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "Order OSU/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
+		940B95B71C6E97C60032DF03 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		940B95B91C6E97DD0032DF03 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		940B95BB1C6E981C0032DF03 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		940B95BD1C6E982F0032DF03 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B95BE1C6E982F0032DF03 /* libz.1.1.3.tbd in Frameworks */,
+				940B95BC1C6E981C0032DF03 /* libsqlite3.0.tbd in Frameworks */,
+				940B95BA1C6E97DD0032DF03 /* SystemConfiguration.framework in Frameworks */,
+				940B95B81C6E97C60032DF03 /* CoreData.framework in Frameworks */,
+				940B95B61C6E97650032DF03 /* libGoogleAnalyticsServices.a in Frameworks */,
+				940B95A91C6C27980032DF03 /* SWXMLHash.framework in Frameworks */,
 				940B95A71C6C1FB30032DF03 /* SwiftHTTP.framework in Frameworks */,
 				75B5CC2DB9A34B80AC9DCD98 /* Pods.framework in Frameworks */,
 			);
@@ -110,14 +137,18 @@
 		940B955A1C652F990032DF03 /* Order OSU */ = {
 			isa = PBXGroup;
 			children = (
+				940B95B31C6E93900032DF03 /* Library */,
 				940B955B1C652F990032DF03 /* AppDelegate.swift */,
+				940B95B01C6E8F370032DF03 /* -Bridging-Header.h */,
 				940B95621C652F990032DF03 /* Assets.xcassets */,
 				940B95961C6634EE0032DF03 /* CatTableViewCell.swift */,
 				940B95981C6635880032DF03 /* CatTableViewController.swift */,
 				940B959A1C6637000032DF03 /* FoodCategory.swift */,
 				940B95671C652F990032DF03 /* Info.plist */,
+				940B95AE1C6E8ECE0032DF03 /* GoogleService-Info.plist */,
 				940B95641C652F990032DF03 /* LaunchScreen.storyboard */,
 				940B955F1C652F990032DF03 /* Main.storyboard */,
+				940B95AC1C6E64700032DF03 /* OrderDetailViewController.swift */,
 				940B958C1C653F030032DF03 /* Operation.swift */,
 				940B958E1C6560090032DF03 /* OperationDetailsViewController.swift */,
 				940B957B1C6533B80032DF03 /* OperationTableViewCell.swift */,
@@ -126,6 +157,7 @@
 				940B95901C65601C0032DF03 /* OperstionDetails.swift */,
 				940B95941C65AB690032DF03 /* SettingsViewController.swift */,
 				940B95921C6578BD0032DF03 /* WebOrderViewController.swift */,
+				940B95AA1C6D558A0032DF03 /* Network.swift */,
 			);
 			path = "Order OSU";
 			sourceTree = "<group>";
@@ -142,6 +174,12 @@
 		A51CD46A22E260CD534EBBB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				940B95BD1C6E982F0032DF03 /* libz.1.1.3.tbd */,
+				940B95BB1C6E981C0032DF03 /* libsqlite3.0.tbd */,
+				940B95B91C6E97DD0032DF03 /* SystemConfiguration.framework */,
+				940B95B71C6E97C60032DF03 /* CoreData.framework */,
+				940B95B51C6E97650032DF03 /* libGoogleAnalyticsServices.a */,
+				940B95A81C6C27980032DF03 /* SWXMLHash.framework */,
 				940B95A61C6C1FB30032DF03 /* SwiftHTTP.framework */,
 				866E84244EF3A917BF0590B1 /* Pods.framework */,
 			);
@@ -210,7 +248,7 @@
 				TargetAttributes = {
 					940B95571C652F990032DF03 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = U73UR6JLAQ;
+						DevelopmentTeam = DUR727DJC3;
 					};
 					940B956B1C652F990032DF03 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -243,8 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B95B41C6E93900032DF03 /* Library in Resources */,
 				940B95661C652F990032DF03 /* LaunchScreen.storyboard in Resources */,
 				940B95A11C6BD4F40032DF03 /* Default-568h@2x.png in Resources */,
+				940B95AF1C6E8ECE0032DF03 /* GoogleService-Info.plist in Resources */,
 				940B95631C652F990032DF03 /* Assets.xcassets in Resources */,
 				940B95611C652F990032DF03 /* Main.storyboard in Resources */,
 			);
@@ -312,6 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B95AD1C6E64700032DF03 /* OrderDetailViewController.swift in Sources */,
+				940B95AB1C6D558A0032DF03 /* Network.swift in Sources */,
 				940B95931C6578BD0032DF03 /* WebOrderViewController.swift in Sources */,
 				940B955E1C652F990032DF03 /* OperationViewController.swift in Sources */,
 				940B95971C6634EE0032DF03 /* CatTableViewCell.swift in Sources */,
@@ -453,10 +495,19 @@
 			baseConfigurationReference = 5337129FEF16275BA354C82C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Order OSU/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.adamtyler.Order-OSU";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAnalyticsServices",
+					"$(PROJECT_DIR)/Order",
+					OSU,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.adamtyler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Order OSU/-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -465,10 +516,19 @@
 			baseConfigurationReference = 3F881BF604093048CFB7D409 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Order OSU/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.adamtyler.Order-OSU";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAnalyticsServices",
+					"$(PROJECT_DIR)/Order",
+					OSU,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.adamtyler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Order OSU/-Bridging-Header.h";
 			};
 			name = Release;
 		};

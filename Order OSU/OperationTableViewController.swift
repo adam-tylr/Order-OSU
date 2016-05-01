@@ -8,26 +8,34 @@
 
 import UIKit
 import SwiftHTTP
+import SWXMLHash
 
 class OperationTableViewController: UITableViewController, NSXMLParserDelegate {
     
     // MARK: Properties
     var operations = [Operation]()
     var returning = Bool?()
-    var parser = NSXMLParser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loadOperations()
 
+        // First Run Notificaion
+        // Load the order
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if (!defaults.boolForKey("notFirstRun")){
+            defaults.setValue(true, forKey: "notFirstRun")
+            let alert = UIAlertController(title: "Welcome", message: "Select a location to begin your first order or optionally click the settings icon to enter your contact information. This will make the checkout process faster.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Got It!", style: UIAlertActionStyle.Default, handler: nil))
+            navigationController?.popViewControllerAnimated(true)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        checkStatus()
         
         // TODO: add offline alert
         //let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
@@ -36,85 +44,17 @@ class OperationTableViewController: UITableViewController, NSXMLParserDelegate {
     }
     
     func loadOperations(){
-        let photo1 = UIImage(named: "courtside")!
+        let photo1 = UIImage(named: "courtsideLogo")!
         let operation1 = Operation(name: "Courtside", photo: photo1)!
         
-        let photo2 = UIImage(named: "pad")!
+        let photo2 = UIImage(named: "padLogo")!
         let operation2 = Operation(name: "PAD", photo: photo2)!
         
-        let photo3 = UIImage(named: "woodys")!
+        let photo3 = UIImage(named: "woodysLogo")!
         let operation3 = Operation(name: "Woody's", photo: photo3)!
         
         operations += [operation1, operation2, operation3]
     }
-    
-    
-    var elements = NSMutableDictionary()
-    var element = NSString()
-    var status = NSMutableString()
-    var enabled = NSMutableString()
-    
-    func httpGet(callback: (NSData, String?) -> Void) {
-        let request = NSURLRequest(URL: NSURL(string: "https://s3-us-west-2.amazonaws.com/order.osu/status.xml")!)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(request){
-            (data, response, error) -> Void in
-                callback(data!, nil)
-        }
-        task.resume()
-    }
-    
-    func checkStatus(){
-        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-        dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            // do some task
-            //self.checkStatus()
-            self.httpGet(){
-                (data, error) -> Void in
-                if error != nil {
-                    print(error)
-                } else {
-                    let xmlParser = NSXMLParser(data: data)
-                    self.parse(xmlParser)
-                }
-            }
-        }
-    }
-    
-    func parse(xmlParser: NSXMLParser){
-    
-        let url = NSURL(string: "https://s3-us-west-2.amazonaws.com/order.osu/status.xml")
-        let xmlParser = NSXMLParser(contentsOfURL: url!)
-        xmlParser!.delegate = self
-        status = ""
-        enabled = ""
-        xmlParser!.parse()
-        if (status != "ok"){
-            let alert = UIAlertController(title: "Yikes!", message: status as String, preferredStyle: UIAlertControllerStyle.Alert)
-            if (enabled == "true"){
-                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
-            }
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-    }
-    
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        element = elementName
-    }
-    
-    func parser(parser: NSXMLParser, foundCharacters string: String){
-        if element.isEqualToString("status") {
-            status.appendString(string)
-        }else if element.isEqualToString("enabled"){
-            enabled.appendString(string)
-        }
-    }
-    
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?){
-        element = ""
-    }
-   
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

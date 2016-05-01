@@ -15,22 +15,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OperationTableViewCell" rowHeight="185" id="Zos-nk-xV0" customClass="OperationTableViewCell" customModule="Order_OSU" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OperationTableViewCell" rowHeight="185" id="Zos-nk-xV0" customClass="OperationTableViewCell" customModule="Order_OSU" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="185"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zos-nk-xV0" id="Id2-sg-pLV">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="184"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="jl2-bD-hRb">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="184"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="jl2-bD-hRb">
+                                            <rect key="frame" x="5" y="5" width="590" height="174"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="jl2-bD-hRb" secondAttribute="bottom" id="EOR-Zn-bbM"/>
-                                        <constraint firstItem="jl2-bD-hRb" firstAttribute="top" secondItem="Id2-sg-pLV" secondAttribute="top" id="RGn-en-IbT"/>
-                                        <constraint firstItem="jl2-bD-hRb" firstAttribute="leading" secondItem="Id2-sg-pLV" secondAttribute="leading" id="TmD-Gy-FCY"/>
-                                        <constraint firstAttribute="trailing" secondItem="jl2-bD-hRb" secondAttribute="trailing" id="idT-PT-mRW"/>
+                                        <constraint firstAttribute="bottom" secondItem="jl2-bD-hRb" secondAttribute="bottom" constant="5" id="EOR-Zn-bbM"/>
+                                        <constraint firstItem="jl2-bD-hRb" firstAttribute="top" secondItem="Id2-sg-pLV" secondAttribute="top" constant="5" id="RGn-en-IbT"/>
+                                        <constraint firstItem="jl2-bD-hRb" firstAttribute="leading" secondItem="Id2-sg-pLV" secondAttribute="leading" constant="5" id="TmD-Gy-FCY"/>
+                                        <constraint firstAttribute="trailing" secondItem="jl2-bD-hRb" secondAttribute="trailing" constant="5" id="idT-PT-mRW"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1413" y="427"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="lWp-Nz-bKq">
             <objects>
-                <viewController id="7J2-bl-Qy3" customClass="SettingsViewController" customModule="Order_OSU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="7J2-bl-Qy3" customClass="SettingsViewController" customModule="Order_OSU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TyD-lj-um5"/>
                         <viewControllerLayoutGuide type="bottom" id="P2Q-wp-tW6"/>
@@ -102,18 +102,31 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="edu-qd-JCT"/>
                                 </constraints>
-                                <string key="text">Order OSU V 1.0
+                                <string key="text">Order OSU V 1.0.1
 
-This application is not affiliated with University Dining Services or The Ohio State University</string>
+This application is not affiliated with or endorsed by University Dining Services or The Ohio State University</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD3-Y1-x4G">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Tdz-DA-YHT"/>
+                                    <barButtonItem title="View Details of Last Order" id="2WY-hB-xMU">
+                                        <connections>
+                                            <segue destination="lU8-nh-e0w" kind="show" id="Ji3-ak-IW2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OqM-1U-XZl"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="svu-EV-qP3" secondAttribute="trailing" id="1UW-PN-8kM"/>
                             <constraint firstItem="svu-EV-qP3" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="3Gi-5H-xUH"/>
+                            <constraint firstAttribute="trailing" secondItem="kD3-Y1-x4G" secondAttribute="trailing" id="5Rb-jY-iqP"/>
                             <constraint firstItem="5A0-le-exH" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="5rg-2o-5Qh"/>
                             <constraint firstItem="iFl-0V-0Cc" firstAttribute="leading" secondItem="h2s-IX-HEu" secondAttribute="leadingMargin" id="7Kd-bQ-1A9"/>
                             <constraint firstItem="7gT-La-IQs" firstAttribute="leading" secondItem="h2s-IX-HEu" secondAttribute="leadingMargin" id="BpS-2J-yKx"/>
@@ -124,6 +137,8 @@ This application is not affiliated with University Dining Services or The Ohio S
                             <constraint firstItem="svu-EV-qP3" firstAttribute="leading" secondItem="h2s-IX-HEu" secondAttribute="leadingMargin" id="HAi-Me-cod"/>
                             <constraint firstItem="5A0-le-exH" firstAttribute="top" secondItem="svu-EV-qP3" secondAttribute="bottom" constant="30" id="HBn-At-nIK"/>
                             <constraint firstItem="svu-EV-qP3" firstAttribute="top" secondItem="7gT-La-IQs" secondAttribute="bottom" constant="20" id="HQQ-z1-Ujk"/>
+                            <constraint firstItem="kD3-Y1-x4G" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="LGz-As-hIJ"/>
+                            <constraint firstItem="P2Q-wp-tW6" firstAttribute="top" secondItem="kD3-Y1-x4G" secondAttribute="bottom" id="LzY-Ug-0Cz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iFl-0V-0Cc" secondAttribute="trailing" id="QNX-Nc-J3G"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1r0-VV-CyD" secondAttribute="trailing" id="YAl-a7-PvD"/>
                             <constraint firstItem="7gT-La-IQs" firstAttribute="top" secondItem="1r0-VV-CyD" secondAttribute="bottom" constant="20" id="dU2-fR-EmG"/>
@@ -131,8 +146,10 @@ This application is not affiliated with University Dining Services or The Ohio S
                             <constraint firstItem="1r0-VV-CyD" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="j6G-0S-tFx"/>
                             <constraint firstItem="7gT-La-IQs" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="kEC-H0-nrO"/>
                             <constraint firstItem="iFl-0V-0Cc" firstAttribute="top" secondItem="TyD-lj-um5" secondAttribute="bottom" constant="30" id="n7x-Bl-fvh"/>
+                            <constraint firstItem="kD3-Y1-x4G" firstAttribute="leading" secondItem="h2s-IX-HEu" secondAttribute="leading" id="nRX-Gw-pok"/>
                             <constraint firstItem="1r0-VV-CyD" firstAttribute="top" secondItem="iFl-0V-0Cc" secondAttribute="bottom" constant="20" id="pWs-De-32F"/>
                             <constraint firstItem="Wfg-oy-c4C" firstAttribute="centerX" secondItem="h2s-IX-HEu" secondAttribute="centerX" id="rHi-Hj-6IH"/>
+                            <constraint firstItem="P2Q-wp-tW6" firstAttribute="top" secondItem="kD3-Y1-x4G" secondAttribute="bottom" id="riG-TQ-b4I"/>
                             <constraint firstItem="Wfg-oy-c4C" firstAttribute="top" secondItem="5A0-le-exH" secondAttribute="bottom" constant="40" id="tEc-9l-t60">
                                 <string key="userLabel">Order OSU V 1.0  This application is not affiliated with University Dining Services or The Ohio State University.top = Save.bottom + 40</string>
                             </constraint>
@@ -150,6 +167,24 @@ This application is not affiliated with University Dining Services or The Ohio S
             </objects>
             <point key="canvasLocation" x="2161" y="-272"/>
         </scene>
+        <!--Order Detail-->
+        <scene sceneID="1f8-Nq-8hN">
+            <objects>
+                <viewController title="Order Detail" id="lU8-nh-e0w" customClass="OrderDetailViewController" customModule="Order_OSU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LZ3-Yo-5Ty"/>
+                        <viewControllerLayoutGuide type="bottom" id="mSL-bB-LdF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ggL-70-YVI" userLabel="Order Detail">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWQ-2H-Aun" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2931" y="-272"/>
+        </scene>
         <!--Details-->
         <scene sceneID="kDA-O6-1vg">
             <objects>
@@ -162,17 +197,17 @@ This application is not affiliated with University Dining Services or The Ohio S
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yy-Do-fkJ">
-                                <rect key="frame" x="279" y="157" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yy-Do-fkJ">
+                                <rect key="frame" x="20" y="157" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-lT-aiv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-lT-aiv">
                                 <rect key="frame" x="20" y="94" width="560" height="33"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cky-ob-WNG">
-                                <rect key="frame" x="279" y="208" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cky-ob-WNG">
+                                <rect key="frame" x="20" y="208" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -189,16 +224,20 @@ This application is not affiliated with University Dining Services or The Ohio S
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cky-ob-WNG" firstAttribute="centerX" secondItem="u6v-oI-NjN" secondAttribute="centerX" id="5Go-Ox-Fww"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Yy-Do-fkJ" secondAttribute="trailing" id="Ez5-lR-ybu"/>
+                            <constraint firstItem="6Yy-Do-fkJ" firstAttribute="leading" secondItem="u6v-oI-NjN" secondAttribute="leadingMargin" id="Lf9-bf-06o"/>
                             <constraint firstItem="9dg-lT-aiv" firstAttribute="centerX" secondItem="u6v-oI-NjN" secondAttribute="centerX" id="Nl0-ov-kFU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9dg-lT-aiv" secondAttribute="trailing" id="Vsb-jn-2jg"/>
                             <constraint firstItem="cky-ob-WNG" firstAttribute="top" secondItem="6Yy-Do-fkJ" secondAttribute="bottom" constant="30" id="X97-A0-AeY"/>
                             <constraint firstItem="9dg-lT-aiv" firstAttribute="leading" secondItem="u6v-oI-NjN" secondAttribute="leadingMargin" id="ag5-4Q-xng"/>
+                            <constraint firstItem="cky-ob-WNG" firstAttribute="leading" secondItem="u6v-oI-NjN" secondAttribute="leadingMargin" id="ckC-jE-oNu"/>
                             <constraint firstItem="HgO-it-ZSf" firstAttribute="top" secondItem="cky-ob-WNG" secondAttribute="bottom" constant="30" id="geH-Rh-GOP"/>
                             <constraint firstItem="9dg-lT-aiv" firstAttribute="top" secondItem="4Z3-2t-OWX" secondAttribute="bottom" constant="30" id="k8G-IS-qOX"/>
                             <constraint firstItem="9dg-lT-aiv" firstAttribute="top" secondItem="4Z3-2t-OWX" secondAttribute="bottom" constant="30" id="lOf-67-s0r"/>
                             <constraint firstItem="6Yy-Do-fkJ" firstAttribute="centerX" secondItem="u6v-oI-NjN" secondAttribute="centerX" id="rBx-M2-zay"/>
                             <constraint firstItem="6Yy-Do-fkJ" firstAttribute="top" secondItem="9dg-lT-aiv" secondAttribute="bottom" constant="30" id="sWF-rn-Pcs"/>
                             <constraint firstItem="HgO-it-ZSf" firstAttribute="centerX" secondItem="u6v-oI-NjN" secondAttribute="centerX" id="wQz-PH-App"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cky-ob-WNG" secondAttribute="trailing" id="z1j-JU-7Gi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -227,19 +266,19 @@ This application is not affiliated with University Dining Services or The Ohio S
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IYA-Pd-wUr">
-                                            <rect key="frame" x="8" y="-9" width="113" height="113"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="113" id="9t2-cj-maG"/>
-                                                <constraint firstAttribute="height" constant="113" id="oQQ-d7-Vth"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y4-gh-FC7">
                                             <rect key="frame" x="131" y="46" width="451" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IYA-Pd-wUr">
+                                            <rect key="frame" x="8" y="-9" width="113" height="113"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="113" id="9t2-cj-maG"/>
+                                                <constraint firstAttribute="height" constant="113" id="oQQ-d7-Vth"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="IYA-Pd-wUr" secondAttribute="bottom" id="0gY-NL-SeK"/>

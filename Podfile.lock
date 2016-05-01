@@ -1,0 +1,13 @@
+PODS:
+  - SwiftHTTP (1.0.3)
+  - SWXMLHash (2.1.0)
+
+DEPENDENCIES:
+  - SwiftHTTP (~> 1.0.3)
+  - SWXMLHash (~> 2.1.0)
+
+SPEC CHECKSUMS:
+  SwiftHTTP: fface018ab365bfb49fa3dca9fdfe77cafccde8b
+  SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
+
+COCOAPODS: 0.39.0

@@ -166,6 +166,19 @@ class WebOrderViewController: UIViewController, WKNavigationDelegate {
     }
     
     func orderComplete(){        
+        // Save order completion URL
+        
+        let tracker = GAI.sharedInstance().defaultTracker
+        let eventTracker: NSObject = GAIDictionaryBuilder.createEventWithCategory(
+            "Transaction",
+            action: "Complete",
+            label: "Transaction Complete",
+            value: nil).build()
+        tracker.send(eventTracker as! [NSObject : AnyObject])
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject((self.webView?.URL)?.absoluteString, forKey: "lastOrder")
+        
         // Return to the main operation menu
         // Create popup alert to confirm order placed
         let alert = UIAlertController(title: "Success!", message: "Your Order has been placed", preferredStyle: UIAlertControllerStyle.Alert)
